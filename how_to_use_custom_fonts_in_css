@@ -1,0 +1,22 @@
+
+FROM A DOWNLOADED TTF FILE:
+
+@font-face {
+  font-family: "BernalHeights";
+  src: url("BernalHeights.ttf") format("truetype");
+}
+
+(*INCLUDE TTF FILE IN CSS FOLDER.)
+
+
+
+
+——————————————————————————————————————————————————————————————————————
+FROM A GOOGLE FONT:
+
+IN CSS FILE:
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+(*INCLUDE “<link href…>” CODE IN HTML HEAD.)
