@@ -1,72 +1,182 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>J. Vogelsberg | Web Developer </title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='http://fonts.googleapis.com/css?family=Lobster|Play:400italic,700italic,400,700,800' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>J. Vogelsberg - Front End Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Fontdiner+Swanky|Architects+Daughter' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <header>
-      <a href="index.html" id="logo">
-        <h1>J. Vogelsberg</h1>
-        <h2>Web Developer   *   Portland, Oregon</h2>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="selected">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
 
+    <!-- Navbar -->
+    <div class="navbar navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand text-muted" href="#">Insert Title</a> -->
+        <div class="collapse navbar-collapse">
 
-    <div id="wrapper">
-      <section>
-        <ul id="gallery">
-          <li>
-            <a href="img/numbers-01.jpg">
-              <img src="img/numbers-01.jpg" alt="">
-              <p>Experimentation with color and texture.</p>
-            </a>
-          </li>
-          <li>
-            <a href="img/numbers-02.jpg">
-              <img src="img/numbers-02.jpg" alt="">
-              <p>Playing with blending modes in Photoshop.</p>
-            </a>
-          </li>
-          <li>
-            <a href="img/numbers-06.jpg">
-              <img src="img/numbers-06.jpg" alt="">
-              <p>Trying to create an 80s style of glows.</p>
-            </a>
-          </li>
-          <li>
-            <a href="img/numbers-09.jpg">
-              <img src="img/numbers-09.jpg" alt="">
-              <p>Drips created using Photoshop brushes.</p>
-            </a>
-          </li>
-          <li>
-            <a href="http://www.jasonvogelsberg.com/bubbleloco/">
-              <img src="img/bubble_loco_screenshot.png" alt="screenshot of Bubble-Loco game">
-              <p><i>Bubble-Loco</i>, a simple game I created using HTML, CSS, and jQuery.</p>
-            </a>
-          </li>
-        </ul>
-      </section>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.linkedin.com/in/jasonvogelsberg" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/JCVogelsberg/" target="_blank">GitHub</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" data-target="#">Contact <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="phone"><a href="tel:386-631-0258"><br/>Phone</a></li>
+                <li class="mail"><a href="mailto:intrepidjournalist@hotmail.com"><br/>Email</a></li>
+                <li class="skype"><a href="skype:jasonvogelsberg?call"><br/>Skype</a></li>
+                <li class="twitter"><a href="http://twitter.com/J_Vogelsberg" target="_blank"><br/>Twitter</a></li>
+              </ul>
+            </li>
+          </ul>
 
-
-      <footer>
-        <a href="http://twitter.com/J_Vogelsberg" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon"></a>
-        <a href="http://www.facebook.com/jason.vogelsberg.5" target="_blank"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
-        <p>&copy; 2014  J. Vogelsberg.</p>
-      </footer>
+        </div>
+      </div>
     </div>
+    <!-- End navbar -->
+
+    <div class="jumbotron">
+      <h1>J. Vogelsberg</h1>
+      <br/>
+      <p class="lead">Front End Web Developer * Aviation Technician * Sailor * Paratrooper * Debonair Gentleman </p>
+      <!-- <p class="btn-group">
+        <a class="btn btn-success btn-lg" href="#">Download the app</a>
+        <a class="btn btn-default btn-lg" href="#" >Text me the link</a>
+      </p> -->
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-wrench"></b>
+          <a href="http://scicvendordatabase.herokuapp.com/" target="_blank" class="siteLinks">
+            <h2>SCIC Vendor Database</h2>
+          </a>
+          <p>A single page app I built for the Sport Compact & Import Club at my alma mater, <a href="http://www.erau.edu/" target="_blank">ERAU</a>. It allows users to recommend shops, mechanics and companies with whom they have had a good experience. It uses Ruby on Rails and Ember.js.</p>
+        </div>
+
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-heart"></b>
+          <a href="http://humane-society-pet-finder.herokuapp.com/" target="_blank" class="siteLinks">
+            <h2>Oregon Humane Society Pet Finder</h2>
+          </a>
+          <p>App that allows the owners of lost pets to report them missing and post photos. People can also post stray animals they have found, and lost pet owners can email the finders directly. Built as part of my final group project at Epicodus.</p>
+        </div>
+
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-phone-alt"></b>
+          <a href="http://breakerbreaker321.herokuapp.com" target="_blank" class="siteLinks">
+            <h2>Breaker-Breaker!</h2>
+          </a>
+          <p>An online app that allows you to send text messages to a phone from your computer. It is built with Ruby on Rails, using the Twilio API for text messaging. The front end is styled with Twitter Bootstrap.</p>
+        </div>
+
+      </div>
+
+        <br/><hr><br/>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-dashboard"></b>
+          <a href="https://acurael.wordpress.com/" target="_blank" class="siteLinks">
+            <h2>Acura EL: America's Rarest Acura</h2>
+          </a>
+          <p>A Wordpress site I created documenting the Acura EL, a car sold only in the Canadian market, and rarely seen in the US.</p>
+        </div>
+        <!-- <div class="col-sm-4">
+          <b class="glyphicon glyphicon-gift"></b>
+          <a href="http://capnjayscrazycornergrocery.herokuapp.com/" target="_blank" class="siteLinks">
+            <h2>Cap'n Jay's Crazy Corner Grocery</h2>
+          </a>
+          <p>"Corner Grocery" is a web app with a Rails back-end and an Ember.js front-end that simulates the inventory system for a small store. Please ignore all the dumb items my friends have posted.</p>
+        </div> -->
+
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-screenshot"></b>
+          <a href="http://www.jasonvogelsberg.com/bubbleloco/" target="_blank" class="siteLinks">
+            <h2>Bubble-Loco!</h2>
+          </a>
+          <p>A simple game I created using HTML5, CSS3, and jQuery. A random color is selected as a target, and the object is to click all the bubbles of that color, while they randomly change size and position.</p>
+        </div>
+
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-leaf"></b>
+          <a href="http://jasonvogelsberg.com/index_classic.html" target="_blank" class="siteLinks">
+            <h2>JasonVogelsberg.com Classic</h2>
+          </a>
+          <p>The original version of this website. Like New Coke, some people prefer it.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-sm-6" id="education">
+          <h3><i>My Story</i></h3>
+          <p>I'm J. Vogelsberg, a web developer living in Portland, Oregon. Originally from Louisville, Kentucky, I spent most of the last decade living in Florida. Enjoying a wide range of interests, I started out as a journalism major, then switched to an Aviation Maintenance degree, graduating from <a href="http://www.erau.edu/" target="_blank">Embry-Riddle Aeronautical University</a> in 2009. I worked in Light Sport aviation, helicopters, and Part-161 flight training operations before deciding I wanted a new technical challenge. This brought me first to web development, then to Oregon.</p>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="img-responsive hidden-xs" src="img/beard_o.png">  <!-- EPICODUS PIC -->
+            </div>
+            <br/>
+            <div class="col-sm-8">
+              <p>When I'm not messing around in front of my MacBook, I enjoy building and rallying Hondas and Subarus, reading, archery, drinking ales, drinking tea, artisanal ballistics, writing, studying history, and sailing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6" id="myStory">
+          <h3><i>Education</i></h3>
+          In 2014, I graduated from <a href="http://www.epicodus.com/" target="_blank">Epicodus</a>, an intensive, four-month web development bootcamp, where I studied HTML, CSS, Javascript/jQuery, Ruby/Rails, PostgreSQL, and Ember.js. Test-driven development was practiced throughout, using Mocha/Chai, Rspec, and Capybara. All work was done in pairs or small groups, and Github was used for version control.
+          <br/><br/>
+          Since leaving Epicodus, I have completed the <a href="http://codeoregon.org/" target="_blank">Code Oregon</a>/<a href="http://teamtreehouse.com/home" target="_blank">Team Treehouse</a> Front End Web Development track, as well as courses in <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>, and <a href="https://wordpress.org/" target="_blank">WordPress</a>.
+          <br/><br/><br/><br/>
+          <a href="http://cdn3.teen.com/wp-content/uploads/2014/03/picky-eater-problems-7.gif" target="_blank" class="btn btn-primary btn-xs pull-right">Today's Stupid &raquo;</a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <p><center><i>&copy; 2015 - JC Vogelsberg</i></center></p>
+      </div>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>
+
+
+<!-- Daily Stupid:
+http://www.gifsforum.com/images/gif/funny%20gifs/grand/funny_gif_21545659.gif
+
+
+
+http://static2.gamespot.com/uploads/ignore_jpg_scale_medium/1418/14187629/2436171-6925160508-funny-gifs-bubble-buddies.gif%253Fw%253D400
+
+
+http://24.media.tumblr.com/tumblr_m966ml1prE1rdmipao1_500.gif
+
+http://cdn2.holytaco.com/wp-content/uploads/2011/10/funny-gifs-transforming-kid.gif
+
+http://origin.funnymeme.com/wp-content/uploads/2014/02/Funny-gifs-Fry-makes-oreos.gif
+
+http://www.best-gif.com/wp-content/uploads/2013/11/funny-gifs-cant-eat-this-shit-any-longer.gif
+
+http://origin.funnymemes.com/wp-content/uploads/2014/08/funny-gifs-vacuum-scares-tiger.gif -->
