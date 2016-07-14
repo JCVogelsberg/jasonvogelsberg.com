@@ -1,182 +1,405 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>J. Vogelsberg - Front End Web Developer</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
-    <link href="css/my-styles.css" rel="stylesheet" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Fontdiner+Swanky|Architects+Daughter' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <title>J. Vogelsberg - Front End Web Developer in Portland, Oregon</title>
+
+    <meta name="description" content="J. Vogelsberg is a Front End Web Developer located in Portland, Oregon. Specializing in Building, Testing, Designing, &amp; Maintaining Responsive Websites, Photo Editing, and Consulting."/>
+
+    <meta name="keywords" content="Portland front end web developer, web dev, FED, web tester, QA, website construction, website maintenance, photo editing, HTML, HTML5, CSS, CSS3, Javascript, jQuery, Photoshop, Photo Shop, PS, Adobe Creative Suite, CS6, Creative Cloud, best practices, Ruby on Rails, Ember.js, Less, Less.js, Angular, Angular.js, PHP, PostgresQL, Postgres, MySQL, Wordpress, PDX, Oregon, Vancouver, WA, Washington"/>
+
+    <meta name="copyright" content="J. Vogelsberg Portland, Oregon. All Rights Reserved"/>
+    <meta name="author" content="J. Vogelsberg, http://www.jasonvogelsberg.com"/>
+    <meta name="city" content="Portland"/>
+    <meta name="country" content="US"/>
+    <meta name="distribution" content="Global"/>
+    <meta name="rating" content="General"/>
+    <meta name="robots" content="INDEX,FOLLOW"/>
+
+    <!-- <link rel="publisher" href="" /> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Vast+Shadow' rel='stylesheet' type='text/css'>
+    <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <!-- HTML5 shim and Respond.js - IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" type="text/javascript"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js" type="text/javascript"></script>
     <![endif]-->
+
   </head>
   <body>
 
-    <!-- Navbar -->
-    <div class="navbar navbar-fixed-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- <a class="navbar-brand text-muted" href="#">Insert Title</a> -->
-        <div class="collapse navbar-collapse">
+<!-- Navbar -->
+		<nav id="myNavbar" class="navbar navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
 
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://www.linkedin.com/in/jasonvogelsberg" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/JCVogelsberg/" target="_blank">GitHub</a></li>
-            <li class="dropdown">
-              <a data-toggle="dropdown" data-target="#">Contact <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="phone"><a href="tel:386-631-0258"><br/>Phone</a></li>
-                <li class="mail"><a href="mailto:intrepidjournalist@hotmail.com"><br/>Email</a></li>
-                <li class="skype"><a href="skype:jasonvogelsberg?call"><br/>Skype</a></li>
-                <li class="twitter"><a href="http://twitter.com/J_Vogelsberg" target="_blank"><br/>Twitter</a></li>
-              </ul>
-            </li>
-          </ul>
+<!-- "Hamburger" menu button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
 
-        </div>
-      </div>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="nav navbar-nav navbar-right ">
+	          <li>
+	            <a href="https://www.linkedin.com/in/jasonvogelsberg" target="_blank">LinkedIn!</a>
+	          </li>
+	          <li>
+	            <a href="https://github.com/JCVogelsberg/" target="_blank">GitHub!</a>
+	          </li>
+	          <li>
+	            <a class="dropdown" data-toggle="dropdown" data-target="#">Contact!</a>			 <!-- <b class="caret"></b> -->
+	            <ul class="dropdown-menu">
+	              <li class="mail">
+	                <a href="mailto:intrepidjournalist@hotmail.com">email</a>
+	              </li>
+	              <li class="skype">
+	                <a href="skype:jasonvogelsberg?call">skype</a>
+	              </li>
+	              <li class="twitter">
+	                <a href="http://twitter.com/J_Vogelsberg" target="_blank">twitter</a>
+	              </li>
+	            </ul>
+	          </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+<!-- Jumbotron -->
+    <div class="jumbotron" title="&copy; 2016 Ann LeVerne Photography" alt="The Vista House, 733 feet above the Columbia River East of Portland, Oregon.">
+      <span class="jumbotron-text">
+        <h1>J. Vogelsberg</h1>
+        <span class="sr-only">J. Vogelsberg, Front End Web Developer in Portland, Oregon </span>
+        <h3>
+          <span>Front End Web Developer</span>
+          <span>Aviation Technician</span>
+          <span>Sailor</span>
+          <span>Paratrooper</span>
+          <span>Debonair Gentleman</span>
+        </h3>
+      </span>
     </div>
-    <!-- End navbar -->
 
-    <div class="jumbotron">
-      <h1>J. Vogelsberg</h1>
-      <br/>
-      <p class="lead">Front End Web Developer * Aviation Technician * Sailor * Paratrooper * Debonair Gentleman </p>
-      <!-- <p class="btn-group">
-        <a class="btn btn-success btn-lg" href="#">Download the app</a>
-        <a class="btn btn-default btn-lg" href="#" >Text me the link</a>
-      </p> -->
-    </div>
-
-    <div class="container">
-
+<!-- About Me Section -->
+    <div class="container about-me">
       <div class="row">
 
-        <div class="col-sm-4">
-          <b class="glyphicon glyphicon-wrench"></b>
-          <a href="http://scicvendordatabase.herokuapp.com/" target="_blank" class="siteLinks">
-            <h2>SCIC Vendor Database</h2>
-          </a>
-          <p>A single page app I built for the Sport Compact & Import Club at my alma mater, <a href="http://www.erau.edu/" target="_blank">ERAU</a>. It allows users to recommend shops, mechanics and companies with whom they have had a good experience. It uses Ruby on Rails and Ember.js.</p>
+        <div class="col-xs-12 col-sm-3 bio-pic">
+          <img title="&copy; 2016 Ann LeVerne Photography" class="img-responsive" src="img/skamania.jpg">
         </div>
 
-        <div class="col-sm-4">
-          <b class="glyphicon glyphicon-heart"></b>
-          <a href="http://humane-society-pet-finder.herokuapp.com/" target="_blank" class="siteLinks">
-            <h2>Oregon Humane Society Pet Finder</h2>
-          </a>
-          <p>App that allows the owners of lost pets to report them missing and post photos. People can also post stray animals they have found, and lost pet owners can email the finders directly. Built as part of my final group project at Epicodus.</p>
-        </div>
-
-        <div class="col-sm-4">
-          <b class="glyphicon glyphicon-phone-alt"></b>
-          <a href="http://breakerbreaker321.herokuapp.com" target="_blank" class="siteLinks">
-            <h2>Breaker-Breaker!</h2>
-          </a>
-          <p>An online app that allows you to send text messages to a phone from your computer. It is built with Ruby on Rails, using the Twilio API for text messaging. The front end is styled with Twitter Bootstrap.</p>
+        <div class="col-xs-12 col-sm-9 bio-text" >
+          <h2>A Little About Me...</h2>
+          <p>I'm J. Vogelsberg, a front end web developer in Portland, Oregon. In 2014, I graduated from <a href="http://www.epicodus.com/" target="_blank">Epicodus</a>, an intensive, four-month web development bootcamp, where I studied HTML, CSS, Javascript/jQuery, Ruby/Rails, PostgreSQL, and Ember.js. When I'm not messing around in front of my MacBook, I enjoy classic Japanese trucks, reading, archery, drinking ales, drinking tea, artisanal ballistics, writing, salmon and trout fishing, studying history, and sailing.</p>
         </div>
 
       </div>
+    </div>
 
-        <br/><hr><br/>
+<!-- Portfolio Section -->
+    <div class="section-header">
+        <span class="fa fa-space-shuttle flip small"></span>
+        <span class="fa fa-space-shuttle flip medium"></span>
+        <span class="fa fa-space-shuttle flip large"></span>
+        <span class="header-title">Works</span>
+        <span class="fa fa-space-shuttle large"></span>
+        <span class="fa fa-space-shuttle medium"></span>
+        <span class="fa fa-space-shuttle small"></span>
+    </div>
 
+<!-- Tiles -->
+    <div class="container-fluid port-tiles">
       <div class="row">
-        <div class="col-sm-4">
-          <b class="glyphicon glyphicon-dashboard"></b>
-          <a href="https://acurael.wordpress.com/" target="_blank" class="siteLinks">
-            <h2>Acura EL: America's Rarest Acura</h2>
-          </a>
-          <p>A Wordpress site I created documenting the Acura EL, a car sold only in the Canadian market, and rarely seen in the US.</p>
-        </div>
-        <!-- <div class="col-sm-4">
-          <b class="glyphicon glyphicon-gift"></b>
-          <a href="http://capnjayscrazycornergrocery.herokuapp.com/" target="_blank" class="siteLinks">
-            <h2>Cap'n Jay's Crazy Corner Grocery</h2>
-          </a>
-          <p>"Corner Grocery" is a web app with a Rails back-end and an Ember.js front-end that simulates the inventory system for a small store. Please ignore all the dumb items my friends have posted.</p>
+
+<!--         <div class="tile-wrapper col-single col-xs-6 col-sm-6 col-md-5ths col-lg-5ths">
+          <div class="tile">
+            <a href='https://www.facebook.com/AndreaLeVernePhotography/?fref=ts' target='_blank'>
+              <img src="img/portfolio_tiles/ann_leverne.png" alt="   X X X X X X, built by J. Vogelsberg"/>
+            </a>
+          </div>
+          <div class="summary">
+            AnnLeVernePhoto.com will go here. Just as soon as I build it.
+          </div>
         </div> -->
 
-        <div class="col-sm-4">
-          <b class="glyphicon glyphicon-screenshot"></b>
-          <a href="http://www.jasonvogelsberg.com/bubbleloco/" target="_blank" class="siteLinks">
-            <h2>Bubble-Loco!</h2>
-          </a>
-          <p>A simple game I created using HTML5, CSS3, and jQuery. A random color is selected as a target, and the object is to click all the bubbles of that color, while they randomly change size and position.</p>
-        </div>
-
-        <div class="col-sm-4">
-          <b class="glyphicon glyphicon-leaf"></b>
-          <a href="http://jasonvogelsberg.com/index_classic.html" target="_blank" class="siteLinks">
-            <h2>JasonVogelsberg.com Classic</h2>
-          </a>
-          <p>The original version of this website. Like New Coke, some people prefer it.</p>
-        </div>
-      </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-sm-6" id="education">
-          <h3><i>My Story</i></h3>
-          <p>I'm J. Vogelsberg, a web developer living in Portland, Oregon. Originally from Louisville, Kentucky, I spent most of the last decade living in Florida. Enjoying a wide range of interests, I started out as a journalism major, then switched to an Aviation Maintenance degree, graduating from <a href="http://www.erau.edu/" target="_blank">Embry-Riddle Aeronautical University</a> in 2009. I worked in Light Sport aviation, helicopters, and Part-161 flight training operations before deciding I wanted a new technical challenge. This brought me first to web development, then to Oregon.</p>
-          <div class="row">
-            <div class="col-sm-4">
-              <img class="img-responsive hidden-xs" src="img/beard_o.png">  <!-- EPICODUS PIC -->
-            </div>
-            <br/>
-            <div class="col-sm-8">
-              <p>When I'm not messing around in front of my MacBook, I enjoy building and rallying Hondas and Subarus, reading, archery, drinking ales, drinking tea, artisanal ballistics, writing, studying history, and sailing.</p>
-            </div>
+        <div class="tile-wrapper col-single col-xs-6 col-sm-6 col-md-5ths col-lg-5ths">
+          <div class="tile">
+            <img src="img/portfolio_tiles/godfrey.jpg" alt="Godfrey Bros. website, built by J. Vogelsberg" />
+          </div>
+          <div class="summary">
+            Godfrey Bros. is a John Deere dealership in Jonesboro, MI. I am proud to say this is the first website I ever built professionally. Uses HTML5, CSS3, LESS, and jQuery.
+            <br/><br/>
+            <a href='http://www.godfreybros.com/' target='_blank'> VIEW SITE </a>
           </div>
         </div>
 
-        <div class="col-sm-6" id="myStory">
-          <h3><i>Education</i></h3>
-          In 2014, I graduated from <a href="http://www.epicodus.com/" target="_blank">Epicodus</a>, an intensive, four-month web development bootcamp, where I studied HTML, CSS, Javascript/jQuery, Ruby/Rails, PostgreSQL, and Ember.js. Test-driven development was practiced throughout, using Mocha/Chai, Rspec, and Capybara. All work was done in pairs or small groups, and Github was used for version control.
-          <br/><br/>
-          Since leaving Epicodus, I have completed the <a href="http://codeoregon.org/" target="_blank">Code Oregon</a>/<a href="http://teamtreehouse.com/home" target="_blank">Team Treehouse</a> Front End Web Development track, as well as courses in <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>, and <a href="https://wordpress.org/" target="_blank">WordPress</a>.
-          <br/><br/><br/><br/>
-          <a href="http://cdn3.teen.com/wp-content/uploads/2014/03/picky-eater-problems-7.gif" target="_blank" class="btn btn-primary btn-xs pull-right">Today's Stupid &raquo;</a>
+        <div class="tile-wrapper col-single col-xs-6 col-sm-6 col-md-5ths col-lg-5ths">
+          <div class="tile">
+            <img src="img/portfolio_tiles/breaker.png" alt="     x x x x x, built by J. Vogelsberg"/>
+          </div>
+          <div class="summary">
+            "Breaker-Breaker!" is a text-messaging app. It has a Ruby on Rails back end and uses the Twilio API to send text messages to cellphones. Currently, it is only set up to text my phone. Hope to hear from you!
+            <br/><br/>
+            <a href='http://breakerbreaker321.herokuapp.com/' target='_blank'> VIEW SITE </a>
+          </div>
         </div>
+
+        <div class="tile-wrapper col-single col-xs-6 col-sm-6 col-md-5ths col-lg-5ths">
+          <div class="tile">
+            <img src="img/portfolio_tiles/oconnor.jpg" alt="O'Connor Trucks website, built by J. Vogelsberg"/>
+          </div>
+          <div class="summary">
+            O'ConnorTrucks.com is a heavy equipment dealer in Maine, where the weather is insane and a truck better be worth its salt. I love this site, and wish I could take credit for designing it. The wood background is gorgeous.
+            <br/><br/>
+            <a href='http://www.oconnortrucks.com/' target='_blank'> VIEW SITE </a>
+          </div>
+        </div>
+
+        <div class="tile-wrapper col-single col-xs-6 col-sm-6 col-md-5ths col-lg-5ths">
+          <div class="tile">
+            <img src="img/portfolio_tiles/acurael_wordpress.png" alt="Acura EL, a Wordpress site built by J. Vogelsberg" />
+          </div>
+          <div class="summary">
+            AcuraEL.Wordpress.com is a site I built detailing a Honda model rarely seen in the United States. Built using Wordpress and the Greyzed theme.
+            <br/><br/>
+            <a href='http://www.acurael.wordpress.com' target='_blank'> VIEW SITE </a>
+          </div>
+        </div>
+
+        <div class="tile-wrapper col-single col-xs-6 col-sm-6 col-md-5ths col-lg-5ths">
+          <div class="tile">
+            <img src="img/portfolio_tiles/wtforg.png" alt="WTF.org, a parody site built by J. Vogelsberg" />
+          </div>
+          <div class="summary">
+            "WTF.org" is a parody news site satirizing ridiculous click-bait ads you see online. Uses C#/ASP.NET, Entity Framework, Razor Syntax, and Bootstrap.
+            <br/><br/>
+            <a href='http://wtforg.apphb.com//' target='_blank'> VIEW SITE </a>
+          </div>
+        </div>
+
+        <div class="tile-wrapper col-single col-xs-6 col-sm-6 col-md-5ths col-lg-5ths">
+          <div class="tile">
+            <img src="img/portfolio_tiles/hendershot.jpg" alt="Hendershot Equipment website, built by J. Vogelsberg" />
+          </div>
+          <div class="summary">
+            Presented with a whole Trello column of sites that needed to be built, I chose Hendershot Equipment because that was the fake name Clint Eastwood gave Gene Hackman in "Unforgiven."
+            <br/><br/>
+            <a href='http://www.hendershotequipment.com/' target='_blank'> VIEW SITE </a>
+          </div>
+        </div>
+
+        <div class="tile-wrapper col-single col-xs-6 col-sm-6 col-md-5ths col-lg-5ths">
+          <div class="tile">
+            <img src="/img/portfolio_tiles/grocery.png" alt="Cap'n Jay's Crazy Corner Grocery, built by J. Vogelsberg"/>
+          </div>
+          <div class="summary">
+            "Cap'n Jay's Crazy Corner Grocery" is a CRUD app I built in school. Its uses a Ruby on Rails back-end, and Bootstrap and Ember.js up front. Please ignore all the dumb items my friends have entered.
+            <br/><br/>
+            <a href='http://capnjayscrazycornergrocery.herokuapp.com/' target='_blank'> VIEW SITE </a>
+          </div>
+        </div>
+
+        <div class="tile-wrapper col-single col-xs-6 col-sm-6 col-md-5ths col-lg-5ths">
+          <div class="tile">
+            <img src="img/portfolio_tiles/parkaway.jpg" alt="Park-A-Way RV &amp; Marine website, built by J. Vogelsberg"/>
+          </div>
+          <div class="summary">
+            Park-A-Way RV &amp; Marine is out in Idaho on the Snake River. Another beautiful design I had the privilege to build. Love the slide-show background image.
+            <br/><br/>
+            <a href='http://www.rvsandboatsforless.com/' target='_blank'> VIEW SITE </a>
+          </div>
+        </div>
+
+        <div class="tile-wrapper col-single col-xs-6 col-sm-6 col-md-5ths col-lg-5ths">
+          <div class="tile">
+            <img src="img/portfolio_tiles/bubble-loco.jpg" alt="Bubble-Loco!, a jQuery game built by J. Vogelsberg"/>
+          </div>
+          <div class="summary">
+            Bubble-Loco is a simple game I built using a few lines of jQuery to manipulate some basic HTML elements.
+            <br/><br/>
+            <a href='http://www.jasonvogelsberg.com/bubbleloco/' target='_blank'> VIEW SITE </a>
+          </div>
+        </div>
+
+        <div class="tile-wrapper col-single col-xs-6 col-sm-6 col-md-5ths col-lg-5ths">
+          <div class="tile">
+            <img src="img/portfolio_tiles/houstonyamaha.jpg" alt="Houston Motorsports website, built by J. Vogelsberg"/>
+          </div>
+          <div class="summary">
+            Houston Motorsports is rated a Top 100 dealer in the U.S.A. by the Motorcycle Industry for Appearance, Styling, Innovations, and Customer Friendliness.
+            <br/><br/>
+            <a href='http://www.houstonyamaha.com/' target='_blank'> VIEW SITE </a>
+          </div>
+        </div>
+
       </div>
-
-      <hr>
-
-      <div>
-        <p><center><i>&copy; 2015 - JC Vogelsberg</i></center></p>
-      </div>
-
     </div>
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<!-- Education Section -->
+	<!--   <div class="container">
+      <div class="section-header">
+        <span class="fa fa-space-shuttle flip small"></span>
+        <span class="fa fa-space-shuttle flip medium"></span>
+        <span class="fa fa-space-shuttle flip large"></span>
+        <span class="header-title">Education</span>
+        <span class="fa fa-space-shuttle large"></span>
+        <span class="fa fa-space-shuttle medium"></span>
+        <span class="fa fa-space-shuttle small"></span>
+      </div>
+
+      <div class="education-descrip">     FLOAT LEFT, AND IMAGE SECTION WILL FLOAT RIGHT
+        <p>constellation of education acheivements, that trigger popup windows when hovered over</p>
+      </div>
+    </div>  -->
+
+<!-- Image Section -->
+    <div class="container">
+      <div class="section-header">
+        <span class="fa fa-space-shuttle flip small"></span>
+        <span class="fa fa-space-shuttle flip medium"></span>
+        <span class="fa fa-space-shuttle flip large"></span>
+        <span class="header-title">Images</span>
+        <span class="fa fa-space-shuttle large"></span>
+        <span class="fa fa-space-shuttle medium"></span>
+        <span class="fa fa-space-shuttle small"></span>
+      </div>
+
+      <div class="image-descrip">            <!-- FLOAT RIGHT, ONCE EDUCATION SECTION IS UP -->
+        <p>All of the images on this page were produced and styled in conjunction with <a title="" href="https://www.facebook.com/AndreaLeVernePhotography/?fref=ts" target="_blank">Ann LeVerne Photography</a>, capturing the exquisite man-made art and breathtaking natural beauty of the Pacific Northwest.</p>
+      </div>
+    </div>
+
+<!-- Carousel -->
+    <div class="image-bg-wrapper">
+      <div class="container image-block">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+<!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img src="/img/rusty_chains.jpg"
+                alt="Rusty chains adorn a barn in Ridgefield, Washington"
+                title="Rusty chains adorn a barn in Ridgefield, Washington &copy; 2016 Ann LeVerne Photography"
+                class="img-responsive">
+            </div>
+
+            <div class="item">
+              <img src="/img/skull-truck-ps.jpg"
+                alt="A classic 1961 Jeep Wagon, with cow skull"
+                title="A classic 1961 Jeep Wagon, with cow skull &copy; 2016 Ann LeVerne Photography"
+                class="img-responsive">
+            </div>
+
+            <div class="item">
+              <img src="img/pearl_district.jpg"
+                alt="The Pearl District, Portland, Oregon"
+                title="The Pearl District, Portland, Oregon &copy; 2016 Ann LeVerne Photography"
+                class="img-responsive">
+            </div>
+
+            <div class="item">
+              <img src="/img/windswept_lighthouse_PS.jpg"
+                alt="The Cape Disappointment Lighthouse near Ilwaco, Washington"
+                title="The Cape Disappointment Lighthouse near Ilwaco, Washington &copy; 2016 Ann LeVerne Photography"
+                class="img-responsive">
+            </div>
+
+            <div class="item">
+              <img src="/img/deschutes_brewery.jpg"
+                alt="Deschutes Brewery and Public House in downtown Portland, Oregon"
+                title="Deschutes Brewery and Public House in downtown Portland, Oregon &copy; 2016 Ann LeVerne Photography"
+                class="img-responsive">
+            </div>
+
+            <div class="item">
+              <img src="img/skamania_hills.jpg"
+                alt="The Columbia River Gorge near Skamania Lodge"
+                title="The Columbia River Gorge near Skamania Lodge &copy; 2016 Ann LeVerne Photography"
+                class="img-responsive">
+            </div>
+
+          </div>
+
+          <!-- Carousel Navigation -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          </div>
+          </div>
+          </div>
+
+
+<!-- Social Media Icons -->
+    <ul class="social-media-icons">
+      <li>
+        <a title="Connect with J. Vogelsberg on LinkedIn." href="https://www.linkedin.com/in/jasonvogelsberg" target="_blank">
+          <img src="/img/drawn_icons/linkedin-drawn-black.png" alt="" class="icon-img">
+        </a>
+      </li>
+      <li>
+        <a title="View code from J. Vogelsberg on Github." href="https://github.com/JCVogelsberg/" target="_blank">
+          <img src="/img/drawn_icons/github-drawn-black.png" alt="" class="icon-img">
+        </a>
+      </li>
+      <li>
+        <a title="Contact J. Vogelsberg through email." href="mailto:intrepidjournalist@hotmail.com">
+          <img src="/img/drawn_icons/email-drawn-black.png" alt="" class="icon-img">
+        </a>
+      </li>
+      <li>
+        <a title="Connect with J. Vogelsberg on Skype." href="skype:jasonvogelsberg?call">
+          <img src="/img/drawn_icons/skype-drawn-black.png" alt="" class="icon-img">
+        </a>
+      </li>
+      <li>
+        <a title="Follow J. Vogelsberg on Twitter." href="http://twitter.com/J_Vogelsberg" target="_blank">
+          <img src="/img/drawn_icons/twitter-drawn-black.png" alt="" class="icon-img">
+        </a>
+      </li>
+    </ul>
+
+<!-- Footer -->
+    <footer>
+      <p>
+        <span id="copyright">&copy;</span> - JC Vogelsberg
+      </p>
+    </footer>
+
+<!-- Scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/scripts.js"></script>
 
   </body>
 </html>
-
-
-<!-- Daily Stupid:
-http://www.gifsforum.com/images/gif/funny%20gifs/grand/funny_gif_21545659.gif
-
-
-
-http://static2.gamespot.com/uploads/ignore_jpg_scale_medium/1418/14187629/2436171-6925160508-funny-gifs-bubble-buddies.gif%253Fw%253D400
-
-
-http://24.media.tumblr.com/tumblr_m966ml1prE1rdmipao1_500.gif
-
-http://cdn2.holytaco.com/wp-content/uploads/2011/10/funny-gifs-transforming-kid.gif
-
-http://origin.funnymeme.com/wp-content/uploads/2014/02/Funny-gifs-Fry-makes-oreos.gif
-
-http://www.best-gif.com/wp-content/uploads/2013/11/funny-gifs-cant-eat-this-shit-any-longer.gif
-
-http://origin.funnymemes.com/wp-content/uploads/2014/08/funny-gifs-vacuum-scares-tiger.gif -->
