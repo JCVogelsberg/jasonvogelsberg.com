@@ -179,6 +179,10 @@ body {
   background-color: transparent;
 }
 
+.navbar-nav>li>.dropdown-menu {
+  background-color: #fff;
+}
+
 .navbar-toggle {
   border: none;
   margin-right: 0;
@@ -197,7 +201,7 @@ body {
 }
 
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
-  background-color: #eaeaea;
+  background-color: transparent;
 }
 
 .dropdown-menu {
@@ -217,7 +221,10 @@ body {
   background-color: #fff;
   background-image: none;
   text-transform: uppercase;
+  text-shadow: 2px 2px 2px tan;
   color: #272315;
+  font-family: 'Vast Shadow', sans-serif;
+  font-size: 14px;
 }
 
 @media (max-width: 767px) {
@@ -231,11 +238,11 @@ body {
 ----------------------------------------------------*/
 
 .jumbotron {
-  background-image: url(/img/backgrounds/vista_house_surreal.jpg);
+  background-image: url(/img/backgrounds/vista_house_surreal_mobile.jpg);
+  background-position: bottom right;
   background-size: cover;
-  background-position: top center;
-  height: 350px;
-  padding: 0;
+  height: auto;
+  padding: 0 0 10px;
 }
 
 .jumbotron-text {
@@ -249,14 +256,14 @@ body {
   line-height: 60px;
   font-size: 40px;
   margin: 0;
-  padding: 12px 12px 0px;
+  padding: 0px 12px;
 }
 
 .jumbotron h3 {
   font-family: 'Vast Shadow', sans-serif;
   font-size: 14px;
   text-shadow: 2px 2px 2px #272315;
-  line-height: 28px;
+  line-height: 36px;
   margin: 8px 16px;
 }
 
@@ -265,14 +272,32 @@ body {
 }
 
 /*SM thru LG View*/
+@media (min-width: 420px) {
+  .jumbotron { 
+
+  }
+  .jumbotron h1 { padding: 12px 12px 0px; }
+}
+
 @media (min-width: 768px) {
+  .jumbotron { 
+    background-image: url(/img/backgrounds/vista_house_surreal.jpg); 
+    background-position: top center;
+    height: 350px;
+  }
   .jumbotron h1 { font-size: 75px; padding: 12px; }
   .jumbotron h3 { font-size: 18px; }
 }
 
-@media (min-width: 420px) and (max-width: 768px) {
+@media (min-width: 420px) and (max-width: 767px) {
   .jumbotron h1 { font-size: 54px; }
   .jumbotron h3 { font-size: 16px; }
+}
+
+@media (min-width: 420px) {
+  .jumbotron {
+    height: 300px;
+  }
 }
 
 /*----------------------------------------------------
@@ -285,6 +310,10 @@ body {
 
 .about-me .row {
   padding: 80px 0;
+}
+
+.bio-text {
+  line-height: 2.2;
 }
 
 .bio-text h2 {
@@ -300,16 +329,25 @@ body {
 
 .bio-pic {
   float: right;
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center;        /* center items horizontally, in this case */
+  height: 300px;
 }
 
 .bio-pic > .img-responsive {
   border-radius: 50%;
 }
 
+
 /*SM View*/
 @media (min-width: 768px) and (max-width: 991px) {
   .bio-pic {
     padding: 20px 5px;
+  }
+  .bio-text {
+    line-height: 1.5;
   }
 }
 
@@ -371,7 +409,7 @@ body {
 }
 
 .tile-wrapper:hover img {
-  -webkit-filter: grayscale(100%);
+  -webkit-filter: sepia(50%);
   opacity: 0.5;
 }
 
@@ -510,12 +548,9 @@ body {
   width: 19%;
 }
 
-.icon-img {
 
-}
-
-.icon-img:hover {
-  transform: rotate(-45deg);
+.icon-img:hover{
+  transform:rotate(45deg);
 }
 
 @media (max-width: 400px) {
